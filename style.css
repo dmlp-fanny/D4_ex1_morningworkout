@@ -3,6 +3,25 @@ nav a {
     text-decoration: none;
 }
 
+a.animation:after {
+    content: "";
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    height: 2px;
+    border-radius: 2px;
+    background-color: crimson;
+    transform-origin: right;
+    transform: scaleX(0);
+
+}
+
+a.animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: .5s ease-out;
+}
+
 blockquote {
     background-color: #eaeaea;
 }
