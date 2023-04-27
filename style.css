@@ -1,25 +1,27 @@
 nav a {
     color: crimson;
     text-decoration: none;
+    position: relative;
 }
 
 a.animation:after {
     content: "";
     width: 100%;
-    position: relative;
+    position: absolute;
     display: inline-block;
     height: 2px;
-    border-radius: 2px;
+    bottom: 0;
+    left: 0;
     background-color: crimson;
-    transform-origin: right;
+    transform-origin: bottom right;
     transform: scaleX(0);
 
 }
 
 a.animation:hover:after {
     transform: scaleX(1);
-    transform-origin: left;
-    transition: .5s ease-out;
+    transform-origin: bottom left;
+    transition: transform .5s ease-out;
 }
 
 blockquote {
