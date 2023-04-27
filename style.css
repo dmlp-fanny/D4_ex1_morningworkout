@@ -1,0 +1,35 @@
+nav a {
+    color: crimson;
+    text-decoration: none;
+}
+
+blockquote {
+    background-color: #eaeaea;
+}
+
+span {
+    font-weight: bold; 
+}
+
+span:last-child {
+    color: crimson;
+}
+
+a.link {
+    font-family: "Lato";
+    text-decoration: none;
+}
+
+a.link.font {
+    font-family: "PT Serif";
+    font-weight: 700;
+}
+
+#cta {
+    color: crimson;
+    font-family: "Lato";
+}
+
+li:nth-child(odd) {
+    text-decoration: underline;
+}
